@@ -1,0 +1,31 @@
+{
+  "dwh":{
+    "tnshost" : "@pdb3017-vip",
+    "port": "1521",
+    "dbname" : "ATDWH",
+    "user" : "qatool",
+    "pass": "aut0mati0n"
+  },
+  "edw": {
+    "tnshost": "@qdb4036-vip",
+    "port": "1521",
+    "dbname": "QAEDW",
+    "user": "birf_auto",
+    "pass": "b0rnt0b34l1v3"
+  },
+  "m1":{
+      "tnshost" : "@atdbmst",
+       "port" : "1521",
+      "dbname" : "ATM1",
+      "user" : "qatool",
+      "pass" : "aut0mati0n"
+  },
+  "snapshot":{
+      "tnshost" : "@atdbsnap1",
+      "port" : "1521",
+      "dbname" : "ATS1",
+      "user" : "qatool",
+      "pass" : "aut0mati0n"
+  }
+
+}

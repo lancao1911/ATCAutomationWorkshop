@@ -1,0 +1,5 @@
+biEventTagAttributes = select p.parameter_code from siteact.birfeventtag_parm_value e, siteact.birftag_parameter p where e.tag_parameter_id = p.tag_parameter_id and p.status = 'A' and e.parameter_status = ? and e.event_tag_header_id = (select event_tag_header_id from siteact.birfeventtag_header where page_code = ? and component_id = ? and rownum < 2)
+
+biImpressionTagAttributes = select p.parameter_code from siteact.birfimptag_parm_value e, siteact.birftag_parameter p where e.tag_parameter_id = p.tag_parameter_id and p.status = 'A' and e.parameter_status = ? and e.imp_tag_header_id = (select imp_tag_header_id from siteact.birfimptag_header where page_code = ? and component_id = ? and rownum < 2)
+
+biPageTagAttributes = select parameter_code from siteact.birfpagetag_parm_value e, siteact.birftag_parameter p where e.tag_parameter_id = p.tag_parameter_id and p.status = 'A' and e.parameter_status = ? and e.page_tag_header_id = (select page_tag_header_id from siteact.birfpagetag_header where page_code = ? and rownum < 2)

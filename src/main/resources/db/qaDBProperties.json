@@ -1,0 +1,30 @@
+{
+  "dwh": {
+    "tnshost": "@qdb4036-vip",
+    "port": "1521",
+    "dbname": "QADWH",
+    "user": "inv",
+    "pass": "test"
+  },
+  "edw": {
+    "tnshost": "@qdb4036-vip",
+    "port": "1521",
+    "dbname": "QAEDW",
+    "user": "birf_auto",
+    "pass": "b0rnt0b34l1v3"
+  },
+  "m1": {
+    "tnshost": "@qadbmst",
+    "port": "1521",
+    "dbname": "QAM1",
+    "user": "inv",
+    "pass": "test"
+  },
+  "snapshot": {
+    "tnshost": "@qadbats1",
+    "port": "1521",
+    "dbname": "QAS1",
+    "user": "qatool",
+    "pass": "aut0mati0n"
+  }
+}
