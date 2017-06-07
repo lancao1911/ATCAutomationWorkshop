@@ -1,0 +1,27 @@
+<suite name="CS-HomePageTests-AIT-Win7" verbose="1" parallel="tests" thread-count="1000">
+
+    <listeners>
+        <listener class-name="com.autotrader.WebDriverListener" />
+    </listeners>
+
+    <!--***Start of Selenium Grid Block ***-->
+    <parameter name="remoteUrl" value="http://10.229.30.248:4444/wd/hub"/>
+    <parameter name="remote_browserVersion" value = "ANY"/>
+    <parameter name="remote_platform" value = "Windows"/>
+    <!--*** End of Selenium Grid Block ***-->
+
+    <parameter name="gridlastic" value="true"/>
+    <!--<parameter name="baseUrl" value="http://test3.autotrader.com/"/>-->
+    <parameter name="baseUrl" value="http://test5.autotrader.com/"/>
+    <parameter name="local" value="true"/>
+    <!--<parameter name="globalFeatureFlag" value="spdyHP"/>-->
+
+    <test name="HomePageTests - Chrome">
+        <parameter name="browserName" value="chrome"/>
+
+        <classes>
+            <class name="pages.home.HomePageTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -6,6 +6,7 @@ import com.autotrader.WebDriverManager;
 //import com.autotrader.commons.quicksave.QuickSave;
 //import com.autotrader.pages.funnels.findyourcar.FindYourCarFunnel;
 //import com.autotrader.pages.home.HomePage;
+import com.autotrader.pages.home.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -32,4 +33,6 @@ public class ConsumerSite {
         }
         featureFlagManager.setFeatureFlag(featureFlags);
     }
+
+    public HomePage getHomePage(){return new HomePage(webDriver, baseUrl);}
 }
